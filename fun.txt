@@ -1,0 +1,29 @@
+Criterion for Euler Paths: Two ends has odd number edges, other vertices have 
+even number edges
+Criterion for Euler Circuits: All vertices have even number edges
+
+Handshaking theorem : d1+d2+d3+...dn = 2*e , dn stands for degree of vertice n,
+thus, a graph without self loop has even number of odd vertices
+
+
+Removing a single edge from a connected graph can make it
+disconnected.  Such an edge is called a bridge
+
+
+Fleury’s Algorithm:
+
+To find an Euler path or an Euler circuit:
+1.  Make sure the graph has either 0 or 2 odd vertices.
+2.  If there are 0 odd vertices, start anywhere.  If there are 2
+odd vertices, start at one of them.
+3.  Follow edges one at a time.  If you have a choice between
+a bridge and a non-bridge, always choose the non-bridge.
+4.  Stop when you run out of edges
+
+
+
+
+
+
+ 
+ 
